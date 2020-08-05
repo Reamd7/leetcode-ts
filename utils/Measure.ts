@@ -9,13 +9,13 @@ export class Measure {
     mem: process.memoryUsage(),
     time: process.hrtime.bigint()
   };
-  static start(){
+  static start(note?: string){
     Measure.prev = {
       cpu: process.cpuUsage(),
       mem: process.memoryUsage(),
       time: process.hrtime.bigint()
     };
-    console.log(`start Measure`);
+    note && console.log(`${note} is starting Measure`);
   }
   static stop(){
     const now = {
