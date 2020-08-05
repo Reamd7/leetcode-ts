@@ -10,14 +10,14 @@ export default abstract class BaseSort<T>  {
     return arr
   }
 
-  protected show(arr: Array<T>) {
-    console.log(JSON.stringify(arr))
-  }
+  // protected show(arr: Array<T>) {
+  //   console.log(JSON.stringify(arr))
+  // }
 
-  protected isSorted(arr: Array<T>) {
-    for (let index = 1; index < arr.length; index++) {
-      if (this.less(arr[index], arr[index-1])) return false
-    }
-    return true
-  }
+  // protected isSorted(arr: Array<T>) {
+  //   for (let index = 1; index < arr.length; index++) {
+  //     if (this.less(arr[index], arr[index-1])) return false
+  //   }
+  //   return true
+  // }
 }

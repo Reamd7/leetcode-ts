@@ -1,12 +1,5 @@
 // import { Measure, testWrapper } from "../../utils/Measure";
 import SelectionSort from "./SelectionSort";
-import { Measure } from "../../utils/Measure";
-beforeAll(()=>{
-  Measure.start()
-})
-afterAll(()=>{
-  Measure.stop()
-})
 describe('选择排序', () => {
   it('[1,2,3,4,5,6]', () => {
     expect(
