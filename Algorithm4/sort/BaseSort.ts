@@ -3,7 +3,7 @@ export default abstract class BaseSort<T>  {
   /**
    * 排序条件
    */
-  abstract compare(a: T, b: T): boolean
+  abstract less(a: T, b: T): boolean
 
   protected exchange(arr: Array<T>, index: number, jndex: number) {
     [arr[index],arr[jndex]] = [arr[jndex],arr[index]]
@@ -16,7 +16,7 @@ export default abstract class BaseSort<T>  {
 
   protected isSorted(arr: Array<T>) {
     for (let index = 1; index < arr.length; index++) {
-      if (this.compare(arr[index], arr[index-1])) return false
+      if (this.less(arr[index], arr[index-1])) return false
     }
     return true
   }
