@@ -33,6 +33,7 @@
   },
   "dependencies": {},
   "scripts": {
+    "test": "jest",
     "lint": "eslint --fix ./leetcode/**/*.ts"
   }
 }
