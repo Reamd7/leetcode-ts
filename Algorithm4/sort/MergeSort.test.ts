@@ -1,5 +1,6 @@
-import Sort from './InsertSort';
-describe("插入排序", ()=>{
+// import { Measure, testWrapper } from "../../utils/Measure";
+import Sort from "./MergeSort";
+describe('归并排序', () => {
   it('[344, 11, 4, 3, 2, 113, 6, 1, 9, 8, 5, 7, 19, 123, 22, 10]', () => {
     expect(
       new Sort().sort([344, 11, 4, 3, 2, 113, 6, 1, 9, 8, 5, 7, 19, 123, 22, 10])
@@ -16,3 +17,4 @@ describe("插入排序", ()=>{
     ).toEqual([1,2,3,4,5,6])
   })
 })
+

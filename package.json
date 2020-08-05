@@ -31,7 +31,10 @@
       "git add"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/benchmark": "^1.0.33",
+    "benchmark": "^2.1.4"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix ./leetcode/**/*.ts"

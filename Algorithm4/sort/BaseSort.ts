@@ -6,13 +6,15 @@ export default abstract class BaseSort<T>  {
   abstract less(a: T, b: T): boolean
 
   protected exchange(arr: Array<T>, index: number, jndex: number) {
-    [arr[index],arr[jndex]] = [arr[jndex],arr[index]]
+    if (index !== jndex) {
+      [arr[index],arr[jndex]] = [arr[jndex],arr[index]]
+    }
     return arr
   }
 
-  // protected show(arr: Array<T>) {
-  //   console.log(JSON.stringify(arr))
-  // }
+  protected show(arr: Array<T>) {
+    console.log(JSON.stringify(arr))
+  }
 
   // protected isSorted(arr: Array<T>) {
   //   for (let index = 1; index < arr.length; index++) {

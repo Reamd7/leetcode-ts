@@ -1,9 +1,8 @@
-import Sort from './InsertSort';
-describe("插入排序", ()=>{
+// import { Measure, testWrapper } from "../../utils/Measure";
+import Sort from "./ShellSort";
+describe('Shell排序', () => {
   it('[344, 11, 4, 3, 2, 113, 6, 1, 9, 8, 5, 7, 19, 123, 22, 10]', () => {
-    expect(
-      new Sort().sort([344, 11, 4, 3, 2, 113, 6, 1, 9, 8, 5, 7, 19, 123, 22, 10])
-    ).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 19, 22, 113, 123, 344])
+    console.log(new Sort().sort([344, 11, 4, 3, 2, 113, 6, 1, 9, 8, 5, 7, 19, 123, 22, 10]))
   })
   it('[1, 10, 11, 124941, 113, 2438, 124942, 2, 19, 123, 1839, 8, 9, 1248914, 3, 4, 5, 6, 22, 7, 344]', () => {
     expect(
@@ -16,3 +15,4 @@ describe("插入排序", ()=>{
     ).toEqual([1,2,3,4,5,6])
   })
 })
+
