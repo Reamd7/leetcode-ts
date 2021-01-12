@@ -39,12 +39,13 @@
 
     "@typescript-eslint/no-explicit-any": 0, // 禁用 any 类型
     "@typescript-eslint/ban-ts-ignore": 0, // 禁用 @ts-ignore
-    "@typescript-eslint/explicit-function-return-type": 1, // 在函数和类方法上需要显式的返回类型
+    // "@typescript-eslint/explicit-function-return-type": 1, // 在函数和类方法上需要显式的返回类型
     "@typescript-eslint/no-var-requires": 0, // 除 import 语句外，禁止使用require语句
     "@typescript-eslint/no-namespace": 0, // 禁用 namespace
     "@typescript-eslint/no-use-before-define": 0, // 禁止未定义就使用
     "@typescript-eslint/no-empty-interface": 0, // 禁止空 interface
     "@typescript-eslint/no-empty-function": 1, // 禁止空function
-    "@typescript-eslint/no-unused-vars": 1 // 导入内容未使用
+    "@typescript-eslint/no-unused-vars": 1, // 导入内容未使用
+    "@typescript-eslint/explicit-function-return-type": "off"
   }
 }
