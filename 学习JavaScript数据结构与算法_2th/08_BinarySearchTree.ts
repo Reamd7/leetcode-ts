@@ -53,7 +53,7 @@ class BinarySearchTree extends BinaryTree {
   root: BinaryTreeNode | null = null;
 
   /**
-   * 插入比较规则
+   * 插入比较规则 插入的速度就是 O(层数)
    * @param node
    * @param newNode
    */
@@ -73,7 +73,10 @@ class BinarySearchTree extends BinaryTree {
       }
     }
   }
-
+  /**
+   * 向树中插入一个键 插入的速度就是 O(层数)
+   * @param key
+   */
   insert(key: number): BinaryTreeNode {
     const node = new BinaryTreeNode(key);
     if (this.root === null) {
@@ -141,7 +144,7 @@ class BinarySearchTree extends BinaryTree {
       if (cb(node)) return;
     }
   }
-  // 搜索最小值
+  // 搜索最小值 O(层数)
   private minNode(node: null): null;
   private minNode(node: BinaryTreeNode): BinaryTreeNode;
   private minNode(node: BinaryTreeNode | null): BinaryTreeNode | null {
@@ -159,7 +162,7 @@ class BinarySearchTree extends BinaryTree {
   get min(): BinaryTreeNode | null {
     return this.root ? this.minNode(this.root) : null;
   }
-  // 搜索最大值
+  // 搜索最大值 O(层数)
   private maxNode(node: null): null
   private maxNode(node: BinaryTreeNode): BinaryTreeNode
   private maxNode(node: BinaryTreeNode | null): BinaryTreeNode | null {
@@ -178,7 +181,7 @@ class BinarySearchTree extends BinaryTree {
     return this.root ? this.maxNode(this.root) : null;
   }
 
-  // 搜索特定值
+  // 搜索特定值 O(层数)
   private searchNode(node: BinaryTreeNode | null, key: number): boolean {
     if (node === null) {
       return false;
