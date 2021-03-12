@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import inorderTraversal from './94.二叉树的中序遍历';
+import preorderTraversal from './144.二叉树的前序遍历';
 class TreeNode {
   val: number;
   left: TreeNode | null;
@@ -25,31 +25,31 @@ function ArrayToTreeNode(arr: Array<null | number>, index = 1): TreeNode | null 
   }
 }
 
-describe('二叉树的中序遍历', () => {
-  it('[1, 2, 3, null,  4] -> [2, 4 ,1 ,3]', () => {
+describe('二叉树的前序遍历', () => {
+  it('[1, 2, 3, null,  4] -> [1, 2, 4 ,3]', () => {
     const t = ArrayToTreeNode([1, 2, 3, null,  4]);
     expect(
-      inorderTraversal(t),
-    ).toEqual([2, 4 ,1 ,3]);
+      preorderTraversal(t),
+    ).toEqual([1, 2, 4 ,3]);
   });
   it('[] []', () => {
     expect(
-      inorderTraversal(ArrayToTreeNode([])),
+      preorderTraversal(ArrayToTreeNode([])),
     ).toEqual([]);
   });
   it('[1] [1]', () => {
     expect(
-      inorderTraversal(ArrayToTreeNode([1])),
+      preorderTraversal(ArrayToTreeNode([1])),
     ).toEqual([1]);
   });
   it('[1, 2] [2, 1]', () => {
     expect(
-      inorderTraversal(ArrayToTreeNode([1, 2])),
-    ).toEqual([2, 1]);
+      preorderTraversal(ArrayToTreeNode([1, 2])),
+    ).toEqual([1, 2]);
   });
   it('[1,null,2] [1, 2]', () => {
     expect(
-      inorderTraversal(ArrayToTreeNode([1,null,2])),
+      preorderTraversal(ArrayToTreeNode([1,null,2])),
     ).toEqual([1, 2]);
   });
 });
