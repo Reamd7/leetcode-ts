@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=144 lang=typescript
+ * @lc app=leetcode.cn id=145 lang=typescript
  *
- * [144] 二叉树的前序遍历
+ * [145] 二叉树的后序遍历
  */
 
 // @lc code=start
@@ -23,13 +23,15 @@ interface TreeNode {
   left: TreeNode | null;
   right: TreeNode | null
 }
-function preorderTraversal(root: TreeNode | null): number[] {
+
+function postorderTraversal(root: TreeNode | null): number[] {
   if (root === null) {
     return [];
   } else {
-    return [root.val, ...preorderTraversal(root.left), ...preorderTraversal(root.right)];
+    return [...postorderTraversal(root.left), ...postorderTraversal(root.right), root.val];
   }
+
 };
-// TODO : https://zhuanlan.zhihu.com/p/101321696
 // @lc code=end
-export default preorderTraversal;
+
+export default postorderTraversal;
