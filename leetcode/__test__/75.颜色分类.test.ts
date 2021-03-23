@@ -1,4 +1,4 @@
-import main from './75.颜色分类';
+import main from '../75.颜色分类';
 
 describe('颜色分类', () => {
   it('给定 nums = [2, 1, 2, 0, 2, 1, 2]', () => {

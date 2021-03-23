@@ -1,4 +1,4 @@
-import main from './21.合并两个有序链表';
+import main from '../21.合并两个有序链表';
 
 interface ListNode {
   val: number

@@ -1,4 +1,4 @@
-import main from './860.柠檬水找零';
+import main from '../860.柠檬水找零';
 
 describe('柠檬水找零', () => {
   it('1. [10] => false', () => {

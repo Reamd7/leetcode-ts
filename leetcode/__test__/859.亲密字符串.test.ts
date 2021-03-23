@@ -1,4 +1,4 @@
-import main from './859.亲密字符串';
+import main from '../859.亲密字符串';
 
 describe('亲密字符串', () => {
   it('1. A = "aaaaaaaa", B = "aaaaaaaa" => true', () => {

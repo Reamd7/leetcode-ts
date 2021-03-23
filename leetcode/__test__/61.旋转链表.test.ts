@@ -1,4 +1,4 @@
-import main from './61.旋转链表';
+import main from '../61.旋转链表';
 interface ListNode {
   val: number
   next: ListNode | null

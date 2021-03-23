@@ -1,4 +1,4 @@
-import hasCycle from './142.环形链表-ii';
+import hasCycle from '../142.环形链表-ii';
 interface ListNode {
   val: number
   next: ListNode | null

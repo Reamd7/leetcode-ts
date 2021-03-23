@@ -1,4 +1,4 @@
-import maxDepth from './104.二叉树的最大深度';
+import maxDepth from '../104.二叉树的最大深度';
 /*
  * @lc app=leetcode.cn id=104 lang=typescript
  *

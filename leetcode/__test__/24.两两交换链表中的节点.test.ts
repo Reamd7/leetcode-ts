@@ -1,4 +1,4 @@
-import main from './24.两两交换链表中的节点';
+import main from '../24.两两交换链表中的节点';
 
 interface ListNode {
   val: number

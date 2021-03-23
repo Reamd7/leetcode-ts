@@ -1,4 +1,4 @@
-import main from './908.最小差值-i';
+import main from '../908.最小差值-i';
 
 describe('最小差值', () => {
   it('main([0, 10], 2) => 6', () => {

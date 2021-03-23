@@ -1,4 +1,4 @@
-import main from '../23.合并k个升序链表';
+import main from '../25.k-个一组翻转链表';
 
 interface ListNode {
   val: number
@@ -38,25 +38,24 @@ function ListNodeToArray(node: ListNode | null): number[] {
   return res;
 }
 
-function run(li: number[][]): number[] {
-  return ListNodeToArray(
-    main(li.map(v => ArrayToListNode(v))),
-  );
+function run(li: number[], k = 1): number[] {
+  return ListNodeToArray(main(ArrayToListNode(li), k));
 }
 
-describe('合并k个升序链表', () => {
-  it('给定 [] => []', () => {
-    expect(run([])).toEqual([]);
+describe('k-个一组翻转链表', () => {
+  it('给定 [], 1 => []', () => {
+    expect(
+      run([], 1),
+    ).toEqual([]);
   });
-  it('给定 [[1]] => [1]', () => {
-    expect(run([[1]])).toEqual([1]);
-  });
-
-  it('给定 [[1,2,3],[4,5,6]] => [1,2,3,4,5,6]', () => {
-    expect(run([[1,2,3],[4,5,6]])).toEqual([1,2,3,4,5,6]);
+  it('给定 [1], 1 => [1]', () => {
+    expect(run([1])).toEqual([1]);
   });
 
-  it('给定 [[1,4,5],[1,3,4],[2,6]] => [1,1,2,3,4,4,5,6]', () => {
-    expect(run([[1,4,5],[1,3,4],[2,6]])).toEqual([1,1,2,3,4,4,5,6]);
+  it('给定 [1, 2, 3, 4], 2 => [2, 1, 4, 3]', () => {
+    expect(run([1, 2, 3, 4], 2)).toEqual([2, 1, 4, 3]);
+  });
+  it('给定 [1, 2, 3, 4], 3 => [3, 2, 1, 4]', () => {
+    expect(run([1, 2, 3, 4], 3)).toEqual([3, 2, 1, 4]);
   });
 });

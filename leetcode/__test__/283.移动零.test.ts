@@ -1,4 +1,4 @@
-import main from './283.移动零';
+import main from '../283.移动零';
 
 describe('移动零', () => {
   it('给定 nums = [0,1,0,3,12], target = 9', () => {

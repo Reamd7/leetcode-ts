@@ -1,4 +1,4 @@
-import main from './892.三维形体的表面积';
+import main from '../892.三维形体的表面积';
 
 describe('三维形体的表面积', () => {
   it('1. [[2]] => 10', () => {

@@ -1,4 +1,4 @@
-import main from './2.两数相加';
+import main from '../2.两数相加';
 interface ListNode {
   val: number
   next: ListNode | null

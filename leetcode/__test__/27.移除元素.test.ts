@@ -1,4 +1,4 @@
-import main from './27.移除元素';
+import main from '../27.移除元素';
 
 describe('移除元素', () => {
   it('给定 nums = [0,1,0,3,12, 0, 1], target = 9', () => {

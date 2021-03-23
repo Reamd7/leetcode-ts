@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import inorderTraversal from './94.二叉树的中序遍历';
+import inorderTraversal from '../94.二叉树的中序遍历';
 class TreeNode {
   val: number;
   left: TreeNode | null;

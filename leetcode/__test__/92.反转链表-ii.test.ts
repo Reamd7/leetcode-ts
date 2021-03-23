@@ -1,4 +1,4 @@
-import main from './92.反转链表-ii';
+import main from '../92.反转链表-ii';
 interface ListNode {
   val: number
   next: ListNode | null

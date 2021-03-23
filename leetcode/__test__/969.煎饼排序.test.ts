@@ -1,4 +1,4 @@
-import main from './969.煎饼排序';
+import main from '../969.煎饼排序';
 function run(target: number[]): number[] {
   const queue = main(target);
   for (const K of queue) {

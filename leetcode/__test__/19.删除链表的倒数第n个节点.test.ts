@@ -1,4 +1,4 @@
-import main from './19.删除链表的倒数第n个节点';
+import main from '../19.删除链表的倒数第n个节点';
 interface ListNode {
   val: number
   next: ListNode | null

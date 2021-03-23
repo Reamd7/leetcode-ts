@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import isBalanced from './110.平衡二叉树';
+import isBalanced from '../110.平衡二叉树';
 class TreeNode {
   val: number;
   left: TreeNode | null;
