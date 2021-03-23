@@ -1,4 +1,4 @@
-import main from './1.两数之和';
+import main from '../1.两数之和';
 
 describe('两数之和', ()=>{
   it('给定 nums = [2, 7, 11, 1], target = 9', () => {
