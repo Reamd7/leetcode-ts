@@ -37,6 +37,8 @@
     "no-param-reassign": "error", // 禁止对 function 的参数进行重新赋值
     "linebreak-style": ["error", "unix"], // 使用 lf 换行
 
+    "no-irregular-whitespace": 0,
+
     "@typescript-eslint/no-explicit-any": 0, // 禁用 any 类型
     "@typescript-eslint/ban-ts-ignore": 0, // 禁用 @ts-ignore
     // "@typescript-eslint/explicit-function-return-type": 1, // 在函数和类方法上需要显式的返回类型
